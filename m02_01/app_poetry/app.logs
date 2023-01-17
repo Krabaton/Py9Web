@@ -1,0 +1,10 @@
+2023-01-17 21:57:06,860 [ERROR] __main__             foo(13) - Exception!
+2023-01-17 21:57:59,899 [ERROR] __main__             foo(13) - Exception!
+2023-01-17 21:58:13,468 [ERROR] __main__             foo(13) - Exception!
+2023-01-17 21:58:26,226 [ERROR] __main__             foo(13) - Exception!
+2023-01-17 21:58:38,772 [ERROR] __main__             foo(13) - Exception!
+2023-01-17 22:02:56,606 [ERROR] __main__             foo(13) - Exception!
+2023-01-17 22:04:17,348 [ERROR] __main__             foo(13) - Exception!
+2023-01-17 22:05:11,114 [ERROR] module             foo(13) - Exception!
+2023-01-17 22:05:26,812 [ERROR] __main__             foo(13) - Exception!
+2023-01-17 22:05:34,619 [ERROR] module             foo(13) - Exception!
