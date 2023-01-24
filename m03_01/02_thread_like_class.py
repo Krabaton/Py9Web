@@ -10,8 +10,9 @@ class MyThread(Thread):
         self.args = args
 
     def run(self):
-        sleep(randint(1, 3))
-        logging.debug(f"In my thread: {self.args}")
+        t = randint(1, 3)
+        sleep(t)
+        logging.debug(f"In my thread: {self.args}: {t}s")
 
 
 if __name__ == '__main__':
@@ -22,6 +23,6 @@ if __name__ == '__main__':
         th.start()
         threads.append(th)
 
-    # [th.join() for th in threads]
+    #[th.join() for th in threads]
     sleep(2)
     logging.debug('End program')

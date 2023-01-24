@@ -15,9 +15,9 @@ def worker(barrier: Barrier):
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG, format="%(threadName)s %(message)s")
-    br = Barrier(2)
+    br = Barrier(3)
 
-    for i in range(10):
+    for i in range(12):
         th = Thread(target=worker, args=(br, ))
         th.start()
 

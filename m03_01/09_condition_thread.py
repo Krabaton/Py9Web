@@ -9,6 +9,7 @@ def master(con: Condition):
     with con:
         logging.debug('Работайте сонце ще високо!')
         con.notify_all()
+        # con.notify(1)
 
 
 def worker(con: Condition):

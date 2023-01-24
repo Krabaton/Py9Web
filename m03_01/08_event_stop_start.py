@@ -17,7 +17,7 @@ def worker(event: Event, event_for_exit: Event):
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG, format="%(threadName)s %(message)s")
-    e = Event()
+    e = Event()  # stop - set, start - clear
     e_exit = Event()
 
     th = Thread(target=worker, args=(e, e_exit))
