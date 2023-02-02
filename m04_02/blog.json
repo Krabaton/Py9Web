@@ -1,0 +1,26 @@
+[
+  {
+    "title": "First",
+    "author": "Denys",
+    "date": "2023-02-02",
+    "text": "Text test"
+  },
+    {
+    "title": "Second",
+    "author": "Maksym",
+    "date": "2023-02-02",
+    "text": "Text test 2"
+  },
+    {
+    "title": "First !!!",
+    "author": "Mykola",
+    "date": "2023-02-03",
+    "text": "Text test !!"
+  },
+    {
+    "title": "Dfg",
+    "author": "Olya",
+    "date": "2023-02-02",
+    "text": "Text test"
+  }
+]
