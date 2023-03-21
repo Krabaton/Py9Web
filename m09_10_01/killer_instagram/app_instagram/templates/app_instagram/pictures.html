@@ -1,0 +1,21 @@
+{% extends "app_instagram/base.html" %}
+
+{% block content %}
+<h1>Your pictures</h1>
+<div class="row">
+    {% for pic in pictures %}
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="{{media}}{{pic.path}}" class="card-img-top" alt="pic">
+            <div class="card-body">
+                <p class="card-text">{{pic.description}}</p>
+                <a href="{% url 'app_instagram:edit' pic.id %}" class="btn btn-info">Edit</a>
+                <a href="{% url 'app_instagram:remove' pic.id %}" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>
+{% endblock %}
