@@ -1,0 +1,6 @@
+**/config.ini
+**/.env
+**/.fleet
+**/__pycache__
+**/.idea
+**/fly.toml
