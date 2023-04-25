@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Welcome to Cats Rest API’s documentation! &#8212; Cats Rest API  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Cats Rest API  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to Cats Rest API’s documentation!</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="welcome-to-cats-rest-api-s-documentation">
+<h1>Welcome to Cats Rest API’s documentation!<a class="headerlink" href="#welcome-to-cats-rest-api-s-documentation" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="rest-api-main">
+<h1>REST API main<a class="headerlink" href="#rest-api-main" title="Permalink to this heading">¶</a></h1>
+</section>
+<section id="module-src.repository.cats">
+<span id="rest-api-repository-cats"></span><h1>REST API repository Cats<a class="headerlink" href="#module-src.repository.cats" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.cats.create">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.cats.</span></span><span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CatModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.cats.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>The create function creates a new cat in the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>body</strong> – CatModel: Define the type of data that will be passed into the function</p></li>
+<li><p><strong>db</strong> – Session: Access the database</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A cat object</p>
+</dd>
+<dt class="field-odd">Doc-author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Trelent</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.cats.get_cat_by_id">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.cats.</span></span><span class="sig-name descname"><span class="pre">get_cat_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.cats.get_cat_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.cats.get_cats">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.cats.</span></span><span class="sig-name descname"><span class="pre">get_cats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.cats.get_cats" title="Permalink to this definition">¶</a></dt>
+<dd><p>The get_cats function returns a list of cats from the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>limit</strong> – int: Limit the number of results returned</p></li>
+<li><p><strong>offset</strong> – int: Specify the number of items to skip before returning results</p></li>
+<li><p><strong>db</strong> – Session: Pass the database session to the function</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of cat objects</p>
+</dd>
+<dt class="field-odd">Doc-author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Trelent</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.cats.remove">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.cats.</span></span><span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.cats.remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.cats.set_vaccinated">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.cats.</span></span><span class="sig-name descname"><span class="pre">set_vaccinated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CatVaccinatedModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.cats.set_vaccinated" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.cats.update">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.cats.</span></span><span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CatModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.cats.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-src.repository.owners">
+<span id="rest-api-repository-owners"></span><h1>REST API repository Owners<a class="headerlink" href="#module-src.repository.owners" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.owners.create">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.owners.</span></span><span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">OwnerModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.owners.create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.owners.get_owner_by_email">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.owners.</span></span><span class="sig-name descname"><span class="pre">get_owner_by_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.owners.get_owner_by_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.owners.get_owner_by_id">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.owners.</span></span><span class="sig-name descname"><span class="pre">get_owner_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">owner_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.owners.get_owner_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.owners.get_owners">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.owners.</span></span><span class="sig-name descname"><span class="pre">get_owners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.owners.get_owners" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.owners.remove">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.owners.</span></span><span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">owner_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.owners.remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.owners.update">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.owners.</span></span><span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">owner_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">OwnerModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.owners.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-src.repository.users">
+<span id="rest-api-repository-users"></span><h1>REST API repository Users<a class="headerlink" href="#module-src.repository.users" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.users.confirmed_email">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.users.</span></span><span class="sig-name descname"><span class="pre">confirmed_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#src.repository.users.confirmed_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.users.create_user">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.users.</span></span><span class="sig-name descname"><span class="pre">create_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UserModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.users.create_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.users.get_user_by_email">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.users.</span></span><span class="sig-name descname"><span class="pre">get_user_by_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">User</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#src.repository.users.get_user_by_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.users.update_avatar">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.users.</span></span><span class="sig-name descname"><span class="pre">update_avatar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">User</span></span></span><a class="headerlink" href="#src.repository.users.update_avatar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.users.update_token">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.users.</span></span><span class="sig-name descname"><span class="pre">update_token</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refresh_token</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.users.update_token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-src.routes.cats">
+<span id="rest-api-routes-cats"></span><h1>REST API routes Cats<a class="headerlink" href="#module-src.routes.cats" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.cats.create_cat">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.cats.</span></span><span class="sig-name descname"><span class="pre">create_cat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CatModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_current_user)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.cats.create_cat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.cats.get_cat">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.cats.</span></span><span class="sig-name descname"><span class="pre">get_cat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Path(Ellipsis)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_current_user)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.cats.get_cat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.cats.get_cats">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.cats.</span></span><span class="sig-name descname"><span class="pre">get_cats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Query(10)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_current_user)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.cats.get_cats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.cats.remove_cat">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.cats.</span></span><span class="sig-name descname"><span class="pre">remove_cat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Path(Ellipsis)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_current_user)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.cats.remove_cat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.cats.update_cat">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.cats.</span></span><span class="sig-name descname"><span class="pre">update_cat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CatModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Path(Ellipsis)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_current_user)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.cats.update_cat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.cats.vaccinated_cat">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.cats.</span></span><span class="sig-name descname"><span class="pre">vaccinated_cat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CatVaccinatedModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Path(Ellipsis)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_current_user)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.cats.vaccinated_cat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-src.routes.owners">
+<span id="rest-api-routes-owners"></span><h1>REST API routes Owners<a class="headerlink" href="#module-src.routes.owners" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.owners.create_owner">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.owners.</span></span><span class="sig-name descname"><span class="pre">create_owner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">OwnerModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.owners.create_owner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.owners.get_owner">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.owners.</span></span><span class="sig-name descname"><span class="pre">get_owner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">owner_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Path(Ellipsis)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.owners.get_owner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.owners.get_owners">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.owners.</span></span><span class="sig-name descname"><span class="pre">get_owners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.owners.get_owners" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.owners.remove_owner">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.owners.</span></span><span class="sig-name descname"><span class="pre">remove_owner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">owner_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Path(Ellipsis)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.owners.remove_owner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.owners.update_owner">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.owners.</span></span><span class="sig-name descname"><span class="pre">update_owner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">OwnerModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Path(Ellipsis)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.owners.update_owner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-src.routes.users">
+<span id="rest-api-routes-users"></span><h1>REST API routes Users<a class="headerlink" href="#module-src.routes.users" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.users.read_users_me">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.users.</span></span><span class="sig-name descname"><span class="pre">read_users_me</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current_user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_current_user)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.users.read_users_me" title="Permalink to this definition">¶</a></dt>
+<dd><p>The read_users_me function is a GET endpoint that returns the current user’s information.
+It uses the auth_service to get the current user, and then returns it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>current_user</strong> – User: Get the current user</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The currently logged in user</p>
+</dd>
+<dt class="field-odd">Doc-author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Trelent</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.users.update_avatar_user">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.users.</span></span><span class="sig-name descname"><span class="pre">update_avatar_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UploadFile</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">File(PydanticUndefined)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_current_user)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.users.update_avatar_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>The update_avatar_user function updates the avatar of a user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file</strong> – UploadFile: Get the file from the request</p></li>
+<li><p><strong>current_user</strong> – User: Get the current user from the database</p></li>
+<li><p><strong>db</strong> – Session: Pass the database session to the repository layer</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The updated user object</p>
+</dd>
+<dt class="field-odd">Doc-author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Trelent</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-src.routes.auth">
+<span id="rest-api-routes-auth"></span><h1>REST API routes Auth<a class="headerlink" href="#module-src.routes.auth" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.auth.confirmed_email">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.auth.</span></span><span class="sig-name descname"><span class="pre">confirmed_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.auth.confirmed_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.auth.login">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.auth.</span></span><span class="sig-name descname"><span class="pre">login</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">OAuth2PasswordRequestForm</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(OAuth2PasswordRequestForm)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.auth.login" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.auth.refresh_token">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.auth.</span></span><span class="sig-name descname"><span class="pre">refresh_token</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">HTTPAuthorizationCredentials</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Security(HTTPBearer)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.auth.refresh_token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.auth.request_email">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.auth.</span></span><span class="sig-name descname"><span class="pre">request_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RequestEmail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background_tasks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BackgroundTasks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.auth.request_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.auth.signup">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.auth.</span></span><span class="sig-name descname"><span class="pre">signup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UserModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background_tasks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BackgroundTasks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.auth.signup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-src.services.auth">
+<span id="rest-api-service-auth"></span><h1>REST API service Auth<a class="headerlink" href="#module-src.services.auth" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.services.auth.Auth">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.services.auth.</span></span><span class="sig-name descname"><span class="pre">Auth</span></span><a class="headerlink" href="#src.services.auth.Auth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.services.auth.Auth.ALGORITHM">
+<span class="sig-name descname"><span class="pre">ALGORITHM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'HS256'</span></em><a class="headerlink" href="#src.services.auth.Auth.ALGORITHM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.services.auth.Auth.SECRET_KEY">
+<span class="sig-name descname"><span class="pre">SECRET_KEY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'secret_key'</span></em><a class="headerlink" href="#src.services.auth.Auth.SECRET_KEY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.services.auth.Auth.create_access_token">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_access_token</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expires_delta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.services.auth.Auth.create_access_token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.services.auth.Auth.create_email_token">
+<span class="sig-name descname"><span class="pre">create_email_token</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.services.auth.Auth.create_email_token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.services.auth.Auth.create_refresh_token">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_refresh_token</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expires_delta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.services.auth.Auth.create_refresh_token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.services.auth.Auth.decode_refresh_token">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">decode_refresh_token</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">refresh_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.services.auth.Auth.decode_refresh_token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.services.auth.Auth.get_current_user">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_current_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(OAuth2PasswordBearer)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Session</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.services.auth.Auth.get_current_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.services.auth.Auth.get_email_from_token">
+<span class="sig-name descname"><span class="pre">get_email_from_token</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.services.auth.Auth.get_email_from_token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.services.auth.Auth.get_password_hash">
+<span class="sig-name descname"><span class="pre">get_password_hash</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.services.auth.Auth.get_password_hash" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.services.auth.Auth.oauth2_scheme">
+<span class="sig-name descname"><span class="pre">oauth2_scheme</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;fastapi.security.oauth2.OAuth2PasswordBearer</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#src.services.auth.Auth.oauth2_scheme" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.services.auth.Auth.pwd_context">
+<span class="sig-name descname"><span class="pre">pwd_context</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;CryptContext&gt;</span></em><a class="headerlink" href="#src.services.auth.Auth.pwd_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.services.auth.Auth.r">
+<span class="sig-name descname"><span class="pre">r</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Redis&lt;ConnectionPool&lt;Connection&lt;host=localhost,port=6379,db=0&gt;&gt;&gt;</span></em><a class="headerlink" href="#src.services.auth.Auth.r" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.services.auth.Auth.verify_password">
+<span class="sig-name descname"><span class="pre">verify_password</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plain_password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashed_password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.services.auth.Auth.verify_password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-src.services.email">
+<span id="rest-api-service-email"></span><h1>REST API service Email<a class="headerlink" href="#module-src.services.email" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.services.email.send_email">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.services.email.</span></span><span class="sig-name descname"><span class="pre">send_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">EmailStr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.services.email.send_email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="#">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Welcome to Cats Rest API’s documentation!</a></li>
+<li><a class="reference internal" href="#rest-api-main">REST API main</a></li>
+<li><a class="reference internal" href="#module-src.repository.cats">REST API repository Cats</a><ul>
+<li><a class="reference internal" href="#src.repository.cats.create"><code class="docutils literal notranslate"><span class="pre">create()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.cats.get_cat_by_id"><code class="docutils literal notranslate"><span class="pre">get_cat_by_id()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.cats.get_cats"><code class="docutils literal notranslate"><span class="pre">get_cats()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.cats.remove"><code class="docutils literal notranslate"><span class="pre">remove()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.cats.set_vaccinated"><code class="docutils literal notranslate"><span class="pre">set_vaccinated()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.cats.update"><code class="docutils literal notranslate"><span class="pre">update()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-src.repository.owners">REST API repository Owners</a><ul>
+<li><a class="reference internal" href="#src.repository.owners.create"><code class="docutils literal notranslate"><span class="pre">create()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.owners.get_owner_by_email"><code class="docutils literal notranslate"><span class="pre">get_owner_by_email()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.owners.get_owner_by_id"><code class="docutils literal notranslate"><span class="pre">get_owner_by_id()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.owners.get_owners"><code class="docutils literal notranslate"><span class="pre">get_owners()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.owners.remove"><code class="docutils literal notranslate"><span class="pre">remove()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.owners.update"><code class="docutils literal notranslate"><span class="pre">update()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-src.repository.users">REST API repository Users</a><ul>
+<li><a class="reference internal" href="#src.repository.users.confirmed_email"><code class="docutils literal notranslate"><span class="pre">confirmed_email()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.users.create_user"><code class="docutils literal notranslate"><span class="pre">create_user()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.users.get_user_by_email"><code class="docutils literal notranslate"><span class="pre">get_user_by_email()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.users.update_avatar"><code class="docutils literal notranslate"><span class="pre">update_avatar()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.users.update_token"><code class="docutils literal notranslate"><span class="pre">update_token()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-src.routes.cats">REST API routes Cats</a><ul>
+<li><a class="reference internal" href="#src.routes.cats.create_cat"><code class="docutils literal notranslate"><span class="pre">create_cat()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.cats.get_cat"><code class="docutils literal notranslate"><span class="pre">get_cat()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.cats.get_cats"><code class="docutils literal notranslate"><span class="pre">get_cats()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.cats.remove_cat"><code class="docutils literal notranslate"><span class="pre">remove_cat()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.cats.update_cat"><code class="docutils literal notranslate"><span class="pre">update_cat()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.cats.vaccinated_cat"><code class="docutils literal notranslate"><span class="pre">vaccinated_cat()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-src.routes.owners">REST API routes Owners</a><ul>
+<li><a class="reference internal" href="#src.routes.owners.create_owner"><code class="docutils literal notranslate"><span class="pre">create_owner()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.owners.get_owner"><code class="docutils literal notranslate"><span class="pre">get_owner()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.owners.get_owners"><code class="docutils literal notranslate"><span class="pre">get_owners()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.owners.remove_owner"><code class="docutils literal notranslate"><span class="pre">remove_owner()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.owners.update_owner"><code class="docutils literal notranslate"><span class="pre">update_owner()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-src.routes.users">REST API routes Users</a><ul>
+<li><a class="reference internal" href="#src.routes.users.read_users_me"><code class="docutils literal notranslate"><span class="pre">read_users_me()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.users.update_avatar_user"><code class="docutils literal notranslate"><span class="pre">update_avatar_user()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-src.routes.auth">REST API routes Auth</a><ul>
+<li><a class="reference internal" href="#src.routes.auth.confirmed_email"><code class="docutils literal notranslate"><span class="pre">confirmed_email()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.auth.login"><code class="docutils literal notranslate"><span class="pre">login()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.auth.refresh_token"><code class="docutils literal notranslate"><span class="pre">refresh_token()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.auth.request_email"><code class="docutils literal notranslate"><span class="pre">request_email()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.auth.signup"><code class="docutils literal notranslate"><span class="pre">signup()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-src.services.auth">REST API service Auth</a><ul>
+<li><a class="reference internal" href="#src.services.auth.Auth"><code class="docutils literal notranslate"><span class="pre">Auth</span></code></a><ul>
+<li><a class="reference internal" href="#src.services.auth.Auth.ALGORITHM"><code class="docutils literal notranslate"><span class="pre">Auth.ALGORITHM</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.SECRET_KEY"><code class="docutils literal notranslate"><span class="pre">Auth.SECRET_KEY</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.create_access_token"><code class="docutils literal notranslate"><span class="pre">Auth.create_access_token()</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.create_email_token"><code class="docutils literal notranslate"><span class="pre">Auth.create_email_token()</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.create_refresh_token"><code class="docutils literal notranslate"><span class="pre">Auth.create_refresh_token()</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.decode_refresh_token"><code class="docutils literal notranslate"><span class="pre">Auth.decode_refresh_token()</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.get_current_user"><code class="docutils literal notranslate"><span class="pre">Auth.get_current_user()</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.get_email_from_token"><code class="docutils literal notranslate"><span class="pre">Auth.get_email_from_token()</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.get_password_hash"><code class="docutils literal notranslate"><span class="pre">Auth.get_password_hash()</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.oauth2_scheme"><code class="docutils literal notranslate"><span class="pre">Auth.oauth2_scheme</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.pwd_context"><code class="docutils literal notranslate"><span class="pre">Auth.pwd_context</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.r"><code class="docutils literal notranslate"><span class="pre">Auth.r</span></code></a></li>
+<li><a class="reference internal" href="#src.services.auth.Auth.verify_password"><code class="docutils literal notranslate"><span class="pre">Auth.verify_password()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-src.services.email">REST API service Email</a><ul>
+<li><a class="reference internal" href="#src.services.email.send_email"><code class="docutils literal notranslate"><span class="pre">send_email()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Cats Rest API  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to Cats Rest API’s documentation!</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, krabaton.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.2.1.
+    </div>
+  </body>
+</html>
