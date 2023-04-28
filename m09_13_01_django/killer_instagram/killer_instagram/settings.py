@@ -28,7 +28,11 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*", "dry-sea-1005.fly.dev"]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost",
+    "https://dry-sea-1005.fly.dev"
+]
 
 
 # Application definition

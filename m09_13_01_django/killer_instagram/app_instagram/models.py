@@ -1,3 +1,4 @@
+import os
 from uuid import uuid4
 
 from django.db import models
@@ -6,11 +7,10 @@ from django.conf import settings
 
 
 def update_filename(instance, filename):
-    print(instance.user)
-    upload_to = settings.BASE_DIR / f'media/{instance.user}'
+    upload_to = f'uploads'
     ext = filename.split('.')[-1]
     filename = f"{uuid4().hex}.{ext}"
-    return upload_to / filename
+    return os.path.join(upload_to, filename)
 
 
 # Create your models here.

@@ -9,6 +9,7 @@ from src.schemas import UserModel, UserResponse, TokenModel, RequestEmail
 from src. repository import users as repository_users
 from src.services.auth import auth_service
 from src.services.email import send_email
+from src.conf import messages
 
 router = APIRouter(prefix="/auth", tags=['auth'])
 security = HTTPBearer()
@@ -31,7 +32,7 @@ async def login(body: OAuth2PasswordRequestForm = Depends(), db: Session = Depen
     if user is None:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid email")
     if not user.confirmed:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Email not confirmed")
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=messages.EMAIL_NOT_CONFIRMED)
     if not auth_service.verify_password(body.password, user.password):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid password")
     # Generate JWT
